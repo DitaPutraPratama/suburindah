@@ -1,0 +1,46 @@
+.DS_Store
+
+application/cache/*
+!application/cache/index.html
+
+application/logs/*
+!application/logs/index.html
+
+!application/*/.htaccess
+
+composer.lock
+tests/mocks/database/ci_test.sqlite
+
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+/vendor/
+
+# Ignore node_modules
+node_modules/
+
+# Keep Tailwind CSS generated files
+# (Remove any rules that ignore public/css/tailwind.css)
+# Tailwind files will be tracked in public/css/
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# Test files
+/tests/tests/
+/tests/results/
+
+# MacOS specific files
+._*
+.Spotlight-V100
+.Trashes
